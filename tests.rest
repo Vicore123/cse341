@@ -1,0 +1,64 @@
+### BOOKS
+
+### Get all books
+GET http://localhost:3000/books
+
+### Get book by ID
+GET http://localhost:3000/books/b1
+
+### Create book
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "id": "b4",
+  "authorId": "a1",
+  "title": "New Book",
+  "publicationDate": "2026-01-01"
+}
+
+### Update book
+PUT http://localhost:3000/books/b4
+Content-Type: application/json
+
+{
+  "authorId": "a1",
+  "title": "Updated Book",
+  "publicationDate": "2026-02-01"
+}
+
+### Delete book
+DELETE http://localhost:3000/books/b4
+
+
+
+
+### AUTHORS
+
+### Get all authors
+GET http://localhost:3000/authors
+
+### Get author by ID
+GET http://localhost:3000/authors/a1
+
+### Create author
+POST http://localhost:3000/authors
+Content-Type: application/json
+
+{
+  "id": "a4",
+  "name": "Jane Austen",
+  "birthYear": 1775
+}
+
+### Update author
+PUT http://localhost:3000/authors/a4
+Content-Type: application/json
+
+{
+  "name": "Jane Austen",
+  "birthYear": 1775
+}
+
+### Delete author
+DELETE http://localhost:3000/authors/a4

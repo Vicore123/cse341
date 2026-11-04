@@ -86,7 +86,7 @@ const deleteAuthor = async (req, res) => {
     }
 
     await deleteAuthorFromDb(id);
-    return res.status(204).send();
+    return res.status(200).json({ message: 'Book deleted successfully' });
   } catch (error) {
     return res.status(500).json({ message: 'Unable to delete author.' });
   }
